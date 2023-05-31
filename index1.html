@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ken Arnett - Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="styles1.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="hero-text">
+        <h1>Hi, I am Ken Arnett Dewantara Siagian</h1>
+        <p>IT Team Lead Support & Data Analyst</p>
+        <img
+          id="profile-picture"
+          src="https://cdn.pixabay.com/photo/2016/11/29/12/13/fence-1869401_640.jpg"
+          alt="Profile Picture"
+          class="profile-picture"
+        />
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <br />
+      <p>University : Telkom University</p>
+      <p>Department : Computer Science</p>
+      <p>Logo of your university :</p>
+      <img
+        src="./Image/telkom.jpg"
+        alt="Telkom University"
+        class="university-logo"
+        id="logo-university"
+      />
+      <button id="show-icon">Hide Icon</button>
+      <br />
+      <br />
+      <p>Image about me :</p>
+
+      <div id="slideshow">
+        <img src="./Image/image-1.jpg" alt="Image about me 1" />
+        <img src="./Image/image-2.jpg" alt="Image about me 2" />
+        <img src="./Image/image-3.jpg" alt="Image about me 3" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to contact me:</p>
+      <ul>
+        <li>Email: ken.revou@gmail.com</li>
+        <li>Phone: +627782575107</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Ken Arnett, All rights reserved.</p>
+    </footer>
+
+    <script>
+      $('#show-icon').click(function () {
+        if ($('#show-icon').html() == 'Hide Icon') {
+          $('#logo-university').hide();
+          $('#show-icon').html('Show Icon');
+        } else {
+          $('#logo-university').show();
+          $('#show-icon').html('Hide Icon');
+        }
+        console.log($('#show-icon').html());
+      });
+    </script>
+  </body>
+</html>
